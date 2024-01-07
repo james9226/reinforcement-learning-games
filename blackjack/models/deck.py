@@ -11,4 +11,4 @@ class BlackJackDeck:
         random.shuffle(self.deck)
 
     def deal(self, num_cards: int = 1) -> list[int]:
-        return [self.deck.pop() for i in range(num_cards)]
+        return [self.deck.pop() for _ in range(num_cards)]
