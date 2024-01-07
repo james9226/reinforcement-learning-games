@@ -55,10 +55,10 @@ class BlackJackEnv(gym.Env):
                 raise ValueError("Invalid action passed")
 
     def render(self):
-        logger.debug(
+        print(
             f"Player Hand : {self.player.hand} with score {self.player.get_score()} \n"
         )
-        logger.debug(
+        print(
             f"Dealer Hand : {self.dealer.hand} with score {self.dealer.get_score()} \n"
         )
 
@@ -86,4 +86,4 @@ class BlackJackEnv(gym.Env):
         self.dealer = BlackJackHand(self.deck.deal())
         self.player = BlackJackHand(self.deck.deal(2))
 
-        return (self.get_obs(), None)  # Returns a tuple of obs and info
+        return (self.get_obs(), {})  # Returns a tuple of obs and info
