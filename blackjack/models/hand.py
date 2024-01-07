@@ -28,5 +28,5 @@ class BlackJackHand:
     def is_bust(self) -> bool:
         return self.get_score() > 21
 
-    def add_card(self, card: int) -> None:
-        self.hand.append(card)
+    def __repr__(self):
+        print(self.hand)
