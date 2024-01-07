@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "reinforcement-learning-games"
+version = "0.1.0"
+description = ""
+authors = ["James Neale <42097394+james9226@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "blackjack"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gymnasium = "^0.29.1"
+stable-baselines3 = "^2.2.1"
+tqdm = "^4.66.1"
+seaborn = "^0.13.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+mypy = "^1.8.0"
+pytest = "^7.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
