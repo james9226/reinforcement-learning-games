@@ -4,7 +4,7 @@ from typing import Optional
 
 class BlackJackDeck:
     def __init__(self, num_decks: int = 1, seed: Optional[int] = None):
-        self.deck = list(range(1, 13)) * 4 * num_decks
+        self.deck = list(range(1, 14)) * 4 * num_decks
 
         if seed:
             random.seed(seed)
